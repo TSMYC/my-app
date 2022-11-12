@@ -1,0 +1,54 @@
+.Header{
+    width: 1240px;
+    height: 68px;
+    background: #FFFFFF;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 100px;
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 210px;
+    height: 68px;
+}
+
+.nav{
+    display: flex;
+    height: 34px;
+    width: 309px;
+    margin-left: 720px;
+
+}
+
+.apropos{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    background: #FF6060;
+}
+
+.accueil{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+}
+
+@media screen and (max-width: 990px){
+    .Header{
+        width: auto;
+        height: 47px;
+    }
+
+    .Header.Logo{
+        height: 47px;
+        width: 145px;
+        margin-left: 0%;
+    }
+}

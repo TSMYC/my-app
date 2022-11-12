@@ -1,0 +1,42 @@
+.erreur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.erreur404{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF6060;
+    height: 263px;
+    width: 597px;
+
+}
+
+.erreurmessage{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+    text-align: center;
+
+}
+
+.Accueil{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+    color: #FF6060;
+}

@@ -1,0 +1,61 @@
+
+.listelogement{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1205px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+    flex-basis: 0;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-left: 100px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    margin-bottom: 100px;
+    list-style-type: none;
+}
+
+.card{
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.logementImage{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titreCard{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: -20%;
+    margin-left: 10%;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 990px){
+.div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+    /* padding-left: 5%; */
+} 
+
+/* .card{
+    width: auto;
+} */
+}
