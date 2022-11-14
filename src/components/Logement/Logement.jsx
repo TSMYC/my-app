@@ -3,9 +3,13 @@ import LogementsContext from '../../logements-context';
 import { useParams } from 'react-router-dom';
 import Rating from '../Rating/Rating';
 import Carrousel from '../Carrousel/Carrousel';
-import Collapse from '../Collapse/Collapse';
+import Collapse from '../Collapse/Collapselogement';
+import Tag from "../Tag/Tag";
+import "../Logement/logement.css";
+
 
 export default function Logement() {
+    // Recuperation de l'id du logement séléctioné
     const logements = useContext(LogementsContext);
     let { id } = useParams();
     console.log(id);
@@ -13,25 +17,36 @@ export default function Logement() {
     if (logement === undefined){
         throw new Error("logement non trouvé");
     }
-    console.log(logement.host.picture)
-    const equipement = (logement.equipments).map((equipment) =>
-    <li key={logement}>
+
+    // Liste des équipements de chaque logement
+    const equipement = (logement.equipments).map((equipment, index) =>
+    <li key={index}>
         {equipment}
     </li> )
+
     return(
         <div>
-             <div>
-                <h1>{logement.title}</h1>
-                <p>{logement.location}</p>
+            <Carrousel pictures={logement.pictures}/>
+            <div className='host'>
+                <div className='divlogement'>
+                    <div className='informationlogement'>
+                        <h1 className='titrelogement'>{logement.title}</h1>
+                        <p className='location'>{logement.location}</p>
+                    </div>
+                    <Tag/>
+                </div>
+                <div className='hostrates'>
+                    <div className='hostinformation'>
+                        <div className='hostname'>{logement.host.name}</div>
+                        <img src={logement.host.picture} alt="photot de l'hôte" className='photohote'/>
+                    </div>
+                    <Rating rating={logement.rating} className='rating'/>
+                </div>
             </div>
-            <div>
-                <div>{logement.host.name}</div>
-                <img src={logement.host.picture} alt="photot de l'hôte"/>
-            </div>
-            <Rating/>
-            <Carrousel/>
+            <div className='propriete'>
             <Collapse title="Description" text={logement.description}/>
             <Collapse title ="Équipements" text ={equipement}/>
+            </div>
         </div>
     )
 }

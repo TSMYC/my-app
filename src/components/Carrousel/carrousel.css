@@ -1,0 +1,57 @@
+.divcarrousel{
+    width: auto;
+}
+
+.picture{
+    height: 415px;
+    width: 80%;
+    border-radius: 25px;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 21%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.activeindex{
+    position: absolute;
+    right: 52%;
+    top: 76%;
+    font-weight: 500;
+    font-size: 18px;
+    color:#FFFFFF;
+    z-index: 50;
+}
+
+.FaChevronRight{
+    position: absolute;
+    right: 15%;
+    top: 340px;
+    height: 80px;
+    width: 47px;
+    color:#FFFFFF;
+}
+
+.FaChevronLeft{
+    position: absolute;
+    right: 89%;
+    top: 345px;
+    height: 80px;
+    width: 47px;
+    color:#FFFFFF;
+}
+
+
+@media screen and (max-width: 768px){
+    .FaChevronRight, .FaChevronLeft{
+        height: 60px;
+        width: 27px;
+    }
+
+    .picture{
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+}

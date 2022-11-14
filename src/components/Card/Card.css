@@ -1,15 +1,14 @@
-
 .listelogement{
     display: flex;
     flex-wrap: wrap;
-    width: 1205px;
+    width: 76%;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 50px;
     flex-basis: 0;
     justify-content: space-around;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 14%;
+    margin-left: 6%;
     background: #F7F7F7;
     border-radius: 25px;
     margin-bottom: 100px;
@@ -18,11 +17,17 @@
 
 .card{
     border-radius: 10px;
-    width: 340px;
-    height: 340px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+}
+
+.cardlink{
+    height: 340px;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-decoration: none;
 }
 
 .logementImage{
@@ -45,17 +50,31 @@
 
 /*media queries*/
 
-@media screen and (max-width: 990px){
-.div{
+@media screen and (max-width: 768px){
+.listelogement{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: auto;
     margin-right: 0%;
     margin-left: 0%;
-    /* padding-left: 5%; */
+    padding-right: 0%;
+    padding-left: 9%;
 } 
 
-/* .card{
-    width: auto;
+.card{
+    width: 90%;
+}
+
+.cardlink{
+    height: 225px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+/* 
+.titreCard{
+
+    margin-top: -25%;
+
 } */
 }

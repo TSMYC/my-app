@@ -1,0 +1,15 @@
+.banner-a-propos{
+    width: 80%;
+    height: 223px;
+    border-radius: 25px;
+    margin-bottom: 45px;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 21%;
+    filter : brightness(70%);
+    position: relative;
+}
+
+
+
+

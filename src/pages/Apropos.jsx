@@ -1,11 +1,12 @@
-import Collapse from "../components/Collapse/Collapse";
-import Banniere from "../components/Banner/Banner";
+import Collapse from "../components/Collapse/Collapseapropos";
+import Bannerapropos from "../assets/Bannerapropos.jpg";
+import "../styles/Apropos.css"
 
 function Apropos() {
     
     return( 
         <div>
-            <Banniere/>
+            <img src={Bannerapropos} alt="banniere" className="banner-a-propos"/>
             <div>
                 <Collapse title = "Fiabilité"
                 text = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>

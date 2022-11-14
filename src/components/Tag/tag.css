@@ -1,0 +1,30 @@
+.tag{
+    border-radius: 10px;
+    background-color: #FF6060;
+    height: 25px;
+    font-style: Medium;
+    font-size: 14px;
+    color: #FFFFFF;
+    fill: solid;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.listetags{
+    display: flex;
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+@media screen and (max-width: 768px){
+    .tag{
+        font-size: 10px;
+        padding-right: 4%;
+        padding-left: 4%;   
+        font-weight: 500; 
+    }   
+}

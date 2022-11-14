@@ -1,0 +1,113 @@
+body{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.titrelogement{
+    font-style: Medium;
+    font-size: 32px;
+    fill: solid;
+    color: #FF6060;
+    margin-bottom: 0%;
+    white-space: nowrap;
+}
+
+.location{
+    Font-style: Medium;
+    Font-size: 18px;
+    color: #FF6060;
+    fill: solid;
+    margin-top: 4px;
+}
+
+.host{
+    display: flex;
+    margin-left: 6%;
+    justify-content: space-between;
+    margin-right: 15%;
+}
+
+.hostname{
+    height: 52px;
+    font-style: Medium;
+    font-size: 18px;
+    Fill: Solid;
+    color: #FF6060;
+    font-weight: 500;
+    width: 93px;
+    margin-top: 30px;
+
+}
+
+.hostinformation{
+    display: flex;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.photohote{
+    width: 64px;
+    height: 64px;
+    border-radius: 25px;
+    Fill: Solid;
+    margin-top: 28px;
+    background-color: #C4C4C4;
+}
+
+.hostrates{
+   display: flex;
+   flex-direction: column;
+}
+
+.propriete{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20%; */ 
+    margin-left: 6%;
+    margin-right: 15%;
+}
+
+li{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px){
+    .host{
+        flex-direction: column;
+    }
+
+    .hostrates{
+        /* display: flex;
+        flex-direction: row; */
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .propriete{
+        flex-direction: column;
+    }
+
+    .hostinformation{
+        margin-left: 80%;
+        margin-bottom: -40px;
+    }
+
+    .titrelogement{
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .location{
+        font-size: 14px;
+    }
+
+    .hostname{
+        font-size: 12px;
+    }
+
+    .photohote{
+        width: 52px;
+        height: 52px;
+    }
+}

@@ -28,3 +28,15 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 990px){
+    .footerlogo{
+        width: 122px;
+        left: 127px;
+    }
+
+    .titlefooter{
+        font-size: 12px;
+    }
+
+}
