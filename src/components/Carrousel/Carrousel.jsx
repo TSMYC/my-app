@@ -9,11 +9,17 @@ function Carrousel(props){
 return(
     <div className='divcarrousel'>
         <img src={props.pictures[activeIndex]} alt="photos carrousel" className='picture'/>
-        {nombredephoto>1?<div className='activeindex'>{activeIndex+1}/{nombredephoto}</div>:null}
+        {nombredephoto>1?
+        <div className='activeindex'>{activeIndex+1}/{nombredephoto}</div>
+        :null}
+        {nombredephoto>1?
         <FaChevronRight className='FaChevronRight'
         onClick={() =>setActiveIndex(activeIndex +1 === nombredephoto ? 0 : activeIndex +1 )}/>
+        :null}
+        {nombredephoto>1?
         <FaChevronLeft className='FaChevronLeft'
         onClick={() =>setActiveIndex(activeIndex -1 < 0 ? nombredephoto-1 : activeIndex - 1 )}/>
+        :null}
     </div>
         
 )}
