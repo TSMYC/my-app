@@ -1,17 +1,15 @@
-body{
-    margin-left: 0%;
-    margin-right: 0%;
-}
-
 .titrelogement{
     font-style: Medium;
-    font-size: 32px;
+    font-size: 18px;
     fill: solid;
     color: #FF6060;
     margin-bottom: 0%;
     white-space: nowrap;
 }
 
+.informationlogement{
+    margin-right: 0%;
+}
 .location{
     Font-style: Medium;
     Font-size: 18px;
@@ -22,9 +20,10 @@ body{
 
 .host{
     display: flex;
-    margin-left: 6%;
+    width: 80%;
+    margin: auto;
     justify-content: space-between;
-    margin-right: 15%;
+    margin-bottom: 20px;
 }
 
 .hostname{
@@ -35,36 +34,36 @@ body{
     color: #FF6060;
     font-weight: 500;
     width: 93px;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
 .hostinformation{
     display: flex;
-    margin-bottom: 20px;
-    width: auto;
+    margin-bottom: 4px;
+    margin-top: 0%;
 }
 
 .photohote{
     width: 64px;
     height: 64px;
-    border-radius: 25px;
+    border-radius: 50px;
     Fill: Solid;
-    margin-top: 28px;
+    margin-top: 10px;
     background-color: #C4C4C4;
 }
 
 .hostrates{
    display: flex;
    flex-direction: column;
+   margin-top: 0%;
 }
 
 .propriete{
     display: flex;
     justify-content: space-between;
-    /* margin-right: 20%; */ 
-    margin-left: 6%;
-    margin-right: 15%;
+    width: 80%;
+    margin: auto;
 }
 
 li{
@@ -74,28 +73,32 @@ li{
 @media screen and (max-width: 768px){
     .host{
         flex-direction: column;
+        width: 80%;
     }
 
     .hostrates{
-        /* display: flex;
-        flex-direction: row; */
-        display: block;
         margin-bottom: 30px;
         margin-top: 0px;
+        justify-content: space-between;
     }
 
     .propriete{
         flex-direction: column;
+        width: 95%;
+        margin: auto;
     }
 
     .hostinformation{
-        margin-left: 80%;
+        margin-left: 75%;
         margin-bottom: -40px;
+        margin-right: 0%;
+        padding-right: 0%;
     }
 
     .titrelogement{
         font-size: 18px;
-        width: 60%;
+        white-space: normal;
+        width: 100%;
     }
 
     .location{
@@ -104,10 +107,23 @@ li{
 
     .hostname{
         font-size: 12px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
     }
 
     .photohote{
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
+        margin-right: 0%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .hostinformation{
+        margin-left: 60%;
     }
 }

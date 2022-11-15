@@ -1,11 +1,10 @@
 .banniere{
     width: 80%;
+    margin: auto;
     height: 223px;
     border-radius: 25px;
     margin-bottom: 45px;
     display: flex;
-    margin-left: 6%;
-    margin-right: 21%;
 }
 
 .Banner{
@@ -24,7 +23,6 @@
     position: absolute;
     top: 30%;
     left: 25%;
-    right: 25%; 
     white-space: nowrap;
 }
 
@@ -33,20 +31,14 @@ br{
 }
 
 @media screen and (max-width: 768px){
-    .banniere{
-     
-        margin-left: 9%;
-        margin-right: 9%;
-    }
 
     .titlebanner{
         font-size: 24px;
         font-weight: 500;
         width: 90%;
         position: absolute;
-        top: 40%;
-        left: 15%;
-        right: 25%; 
+        top: 25%;
+        left: 17%; 
     }
 
     br{
@@ -61,6 +53,7 @@ br{
 
     .banniere{
         border-radius: 10px;
+        height: 111px;
     }
 }
 

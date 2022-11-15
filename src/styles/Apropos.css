@@ -4,8 +4,8 @@
     border-radius: 25px;
     margin-bottom: 45px;
     display: flex;
-    margin-left: 6%;
-    margin-right: 21%;
+    margin-left: auto;
+    margin-right: auto;
     filter : brightness(70%);
     position: relative;
 }

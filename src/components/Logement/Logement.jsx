@@ -25,7 +25,7 @@ export default function Logement() {
     </li> )
 
     return(
-        <div>
+        <div className='divcontainer'>
             <Carrousel pictures={logement.pictures}/>
             <div className='host'>
                 <div className='divlogement'>

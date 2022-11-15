@@ -1,7 +1,6 @@
 .tag{
     border-radius: 10px;
     background-color: #FF6060;
-    height: 25px;
     font-style: Medium;
     font-size: 14px;
     color: #FFFFFF;
@@ -10,6 +9,8 @@
     padding-left: 9%;
     margin-right: 3%;
     display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
     align-items: center;
     white-space: nowrap;
 }
