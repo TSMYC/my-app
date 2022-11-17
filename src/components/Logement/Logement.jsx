@@ -3,7 +3,7 @@ import LogementsContext from '../../logements-context';
 import { useParams } from 'react-router-dom';
 import Rating from '../Rating/Rating';
 import Carrousel from '../Carrousel/Carrousel';
-import Collapse from '../Collapse/Collapselogement';
+import Collapse from '../Collapse/Collapse';
 import Tag from "../Tag/Tag";
 import "../Logement/logement.css";
 
@@ -44,8 +44,12 @@ export default function Logement() {
                 </div>
             </div>
             <div className='propriete'>
-            <Collapse title="Description" text={logement.description}/>
-            <Collapse title ="Équipements" text ={equipement}/>
+            <Collapse container = "container2" collapse = "collapse2" titre = "titre2"
+            image = "image2" texte = "texte2" paragraphe="paragraphe2"
+            title="Description" text={logement.description}/>
+            <Collapse container = "container2" collapse = "collapse2" titre = "titre2"
+            image = "image2" texte = "texte2" paragraphe="paragraphe2"
+            title ="Équipements" text ={equipement}/>
             </div>
         </div>
     )
